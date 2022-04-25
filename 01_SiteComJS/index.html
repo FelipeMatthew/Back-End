@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bem vindo</title>
+ <!-- <link href="style.css" rel="stylesheet" type="text/css" />-->
+</head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); 
+    /*Comentário em CSS*/
+    body{
+      font-family: 'Open Sans', 'sans-serif';
+      background-color: #216fba;
+}
+    .container{
+      background-color: #fff;
+      padding: 20px;
+      width: 70%;
+      margin: 0 auto;
+      border-radius: 10px;
+      border: #333;
+      box-shadow: 0 0 0 10px rgba(0,0,0,0.5);
+    
+    }
+
+  h1{
+    text-alling:center;
+    front-size: 3em;
+  }
+  h1,h2,a{
+    color:#216fba;
+  }
+    img{
+      display:block;
+      height:256px;
+      margin:0 auto;
+      cursor: pointer;
+    }
+    
+  </style>
+
+
+<div class="container">
+  <h1>Olá, <span id= "labelNome"> </span> !!! </h1>
+  <img src= "img/html.png" alt="" id="imgLogo">
+  <h2> Vamos Aprender</h2>
+</ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>Javascript</li>
+</ul>
+  <p>
+<strong>HTML5:</strong> O HTML é uma linguagem de marcação de hipertexto, utilizada na criação da estrutura básica das páginas web.
+  </p>
+  <p>
+     <strong>CSS3:</strong>O CSS é uma linguagem de estilização, utilizada para adicionar estilos visuais nas páginas web.
+  </p>
+  <p>
+    <strong>JavaScript</strong>O JavaScript é uma linguagem de programação, utilizada para tornar as páginas web mais dinâmicas e interativas.
+    </p> 
+
+  <a href="https://w3schools.com/" target="_blank"> W3Schools </a>
+  <a href="https:developer.mozilla.org/pt-BR"
+    target="_blank">Mozilla</a>
+
+  
+  
+</div>
+<script>
+
+const labelNome=document.querySelector('#labelNome')
+const imgLogo= document.querySelector('#imgLogo')
+
+const nome= prompt('Digite seu nome')
+labelNome.innerText=nome
+
+const imagens=[
+  'html.png',
+  'css.png',
+  'js.png'
+]
+let proximaImagem=0
+
+  imgLogo.addEventListener('click',() =>{
+  proximaImagem++
+  if(proximaImagem == imagens.length){
+    proximaImagem=0
+  }
+  
+
+    imgLogo.src='img/'+imagens[proximaImagem]
+      })
+  
+</script>
+
+<!-- ISSO É UM COMENTÁRIO -->
+  
+</body>
+
+</html>
